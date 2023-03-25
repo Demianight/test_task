@@ -1,0 +1,19 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+      <title>Main page</title>
+    </head>
+
+    <body>
+        {% for menu in menus %}
+        
+            <p>
+                <a href={% url 'menu:menu' menu.name %}>{{ menu.name }}</a>
+            </p>
+        
+        {% endfor %}        
+    </body>
+
+</html>

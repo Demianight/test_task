@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+      <title>{{ menu.name }}</title>
+    </head>
+
+    <body>
+      <font size="+5">{{ menu.name }}</font>
+      
+      
+      {% for child in childs %}
+        <p>
+          <a href={% url 'menu:menu' child.name %}>{{ child.name }}</a>
+        </p>
+      {% endfor %}
+      
+        
+    </body>
+
+</html>
