@@ -1,0 +1,8 @@
+###
+GET http://127.0.0.1:8000/add_product_to_recipe?product_id=1&weight=11&recipe_id=2
+
+###
+GET http://127.0.0.1:8000/cook_recipe?recipe_id=1
+
+###
+GET http://127.0.0.1:8000/show_recipes_without_product/1

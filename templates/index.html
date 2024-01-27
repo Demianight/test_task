@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>
+            {% for recipe in recipes_without %}
+                <h1>
+                    {{ recipe.id }} {{ recipe.name }}
+                </h1>
+            {% endfor %}
+        </h1>
+        <h1>
+            {% for recipe in recipes_with_lower_10 %}
+                <h1>
+                    {{ recipe.id }} {{ recipe.name }}
+                </h1>
+            {% endfor %}
+        </h1>
+        
+    </body>
+</html>
